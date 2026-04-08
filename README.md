@@ -1,14 +1,14 @@
-# HADet
+# BA<sup>3</sup>-Det
 
 <p align="left">
   <img src="https://img.shields.io/badge/Status-Under_Review-orange.svg" alt="Status">
   <img src="https://img.shields.io/badge/Code-Architecture_Release-blue.svg" alt="Code">
 </p>
 
-> **Notice:** This repository serves as the supplementary code base for the manuscript **"HADet: Hybrid Attention Detection Network for Microvascular Invasion in Hepatocellular Carcinoma H&E-Stained Images"**, which is currently under peer review. 
+> **Notice:** This repository serves as the supplementary code base for the manuscript **"BA<sup>3</sup>-Det: A Boundary-Aware and Anti-Dilution Attention Network for Microvascular Invasion Detection"**, which is currently under peer review. 
 
 ## 📌 Repository Status
-To facilitate the peer-review process and ensure algorithmic reproducibility, we have released the complete PyTorch implementation of the HADet network architecture. 
+To facilitate the peer-review process and ensure algorithmic reproducibility, we have released the complete PyTorch implementation of the **BA<sup>3</sup>-Det** network architecture. 
 
 Due to double-blind/single-blind review policies, the training pipelines and pre-trained model weights will be fully open-sourced upon the formal acceptance of the paper.
 
@@ -23,7 +23,7 @@ The following structural files are provided for methodological verification. The
 * `basic_modules.py`: Foundational structural components (`CBS`, `GSBN`, and `Focus`).
 * `backbone.py`: The hierarchical feature extraction backbone integrating FCA and CSA blocks.
 * `neck.py`: The PAFPN-based feature fusion neck network.
-* `HADet.py`: The final model encapsulation, including the specific Decoupled Head implementation.
+* `BA3Det.py`: The final model encapsulation, including the specific Decoupled Head implementation.
 
 ## 📊 Dataset Access
 The **L-MVI (Liver-Microvascular Invasion)** dataset, comprising 552 rigorously curated and expert-annotated histopathology images, is complete and ready for evaluation.

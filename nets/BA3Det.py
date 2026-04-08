@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from backbone import HADetBackbone
+from backbone import BA3DetBackbone
 from Neck import PAFPN
 from basic_modules import CBS
 
@@ -35,10 +35,10 @@ class DecoupledHead(nn.Module):
         return cls_out, reg_out, obj_out
 
 
-class HADet(nn.Module):
+class BA3Det(nn.Module):
     def __init__(self, num_classes=1):
-        super(HADet, self).__init__()
-        self.backbone = HADetBackbone()
+        super(BA3Det, self).__init__()
+        self.backbone = BA3DetBackbone()
         self.neck = PAFPN(in_channels=[256, 512, 1024])
 
         self.head_1 = DecoupledHead(256, num_classes)
